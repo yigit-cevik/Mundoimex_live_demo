@@ -1,0 +1,686 @@
+﻿<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | Deniz, Kara, Hava Taşımacılığı &amp; Gümrükleme</title>
+    <meta name="description" content="Mundoimex Logistics & Customs - Uluslararası denizyolu, karayolu, havayolu taşımacılığı, antrepo ve A sınıfı gümrükleme hizmetleri.">
+    <meta name="keywords" content="lojistik, gümrük müşavirliği, denizyolu navlun, karayolu taşımacılık, hava kargo, antrepo, forwarder">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#F0F4F8',
+                            100: '#D9E2EC',
+                            700: '#1E3A8A',
+                            800: '#0F284E',
+                            900: '#0A192F',
+                            950: '#050D18'
+                        },
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Announcement & Emergency Contact Bar -->
+    <header class="w-full">
+        <div class="bg-navy-950 text-slate-300 text-xs border-b border-navy-800 py-2 px-4 sm:px-8">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                    <span class="inline-flex items-center gap-1.5 text-amber-400 font-medium">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                        Gümrük Müşavirliği Yetki: GM-34/8921
+                    </span>
+                    <span class="hidden md:inline text-slate-500">|</span>
+                    <span class="inline-flex items-center gap-1.5">
+                        <i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400"></i>
+                        Pzt - Cuma: 08:30 - 18:30 | 7/24 Kesintisiz Operasyonel Destek
+                    </span>
+                </div>
+                <div class="flex items-center gap-4 font-medium">
+                    <a href="tel:+902125550198" class="inline-flex items-center gap-1.5 hover:text-amber-400 transition-colors">
+                        <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-500"></i>
+                        +90 212 555 0198
+                    </a>
+                    <span class="text-slate-600">|</span>
+                    <a href="mailto:operasyon@mundoimex.com" class="inline-flex items-center gap-1.5 hover:text-amber-400 transition-colors">
+                        <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-500"></i>
+                        operasyon@mundoimex.com
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <nav class="bg-navy-900 border-b border-navy-800/80 sticky top-0 z-50 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-navy-950 font-black shadow-md group-hover:scale-105 transition-transform">
+                        <i data-lucide="anchor" class="w-6 h-6 stroke-[2.5]"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-white flex items-center gap-1">
+                            MUNDO<span class="text-amber-500">IMEX</span>
+                        </span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold -mt-1">
+                            Logistics & Customs
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden lg:flex items-center gap-1 text-sm font-medium text-slate-200">
+                    <a href="index.html" class="px-4 py-2 rounded-md transition-colors hover:text-amber-400 hover:bg-navy-800/40">
+                        Ana Sayfa
+                    </a>
+                    <a href="hizmetler.html" class="px-4 py-2 rounded-md transition-colors text-amber-400 bg-navy-800/80 font-semibold">
+                        Hizmetlerimiz
+                    </a>
+                    <a href="iletisim.html" class="px-4 py-2 rounded-md transition-colors hover:text-amber-400 hover:bg-navy-800/40">
+                        İletişim & Lokasyonlar
+                    </a>
+                </div>
+
+                <!-- Right Actions: Contact CTA & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="iletisim.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold text-navy-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-md hover:shadow-amber-500/20 active:scale-95 transition-all">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Bize Ulaşın
+                    </a>
+
+                    <!-- Mobile Menu Hamburger Button -->
+                    <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 text-slate-300 hover:text-white rounded-lg hover:bg-navy-800 focus:outline-none" aria-label="Menüyü Aç/Kapat">
+                        <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+                        <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden bg-navy-950 border-t border-navy-800 px-4 pt-3 pb-5 space-y-1 text-sm font-medium text-slate-200 shadow-2xl">
+                <a href="index.html" class="block px-3 py-2.5 rounded-md hover:bg-navy-800 hover:text-amber-400">
+                    Ana Sayfa
+                </a>
+                <a href="hizmetler.html" class="block px-3 py-2.5 rounded-md bg-navy-800 text-amber-400 font-semibold">
+                    Hizmetlerimiz
+                </a>
+                <a href="iletisim.html" class="block px-3 py-2.5 rounded-md hover:bg-navy-800 hover:text-amber-400">
+                    İletişim & Lokasyonlar
+                </a>
+                <div class="pt-2">
+                    <a href="iletisim.html" class="w-full inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold text-navy-950 bg-amber-500 hover:bg-amber-400 shadow">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Bize Ulaşın
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow">
+
+<!-- Header Banner Section with 2-Column Balanced Layout -->
+<section class="bg-navy-950 text-white py-12 lg:py-16 border-b border-navy-800 hero-gradient relative overflow-hidden">
+    <!-- Subtle Background Pattern -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <!-- Left Column: Title & Key Highlights -->
+            <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400 bg-navy-800/80 px-3.5 py-1.5 rounded-full border border-amber-500/30">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    Uluslararası Taşımacılık & Mevzuat Portföyü
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                    Uçtan Uca Entegre <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">
+                        Lojistik Hizmetlerimiz
+                    </span>
+                </h1>
+
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Kıtalararası denizyolu konteyner, tarifeli karayolu TIR, ekspres havayolu kargo ve A Karneli gümrükleme danışmanlığından antrepoya kadar tüm dış ticaret adımlarında tek elden profesyonel yönetim.
+                </p>
+
+                <!-- Trust Badges -->
+                <div class="pt-2 flex flex-wrap gap-3 justify-center lg:justify-start text-xs font-semibold text-slate-300">
+                    <span class="inline-flex items-center gap-1.5 bg-navy-900/80 px-3 py-1.5 rounded-lg border border-navy-800">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+                        A Karneli Gümrük Müşavirliği (GM-34/8921)
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-navy-900/80 px-3 py-1.5 rounded-lg border border-navy-800">
+                        <i data-lucide="globe" class="w-4 h-4 text-amber-400"></i>
+                        48+ Ülke Doğrudan Acenta Ağı
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-navy-900/80 px-3 py-1.5 rounded-lg border border-navy-800">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                        %99.8 Zamanında Güvenli Teslimat
+                    </span>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Quick Service Navigator Cards (Fills right space) -->
+            <div class="lg:col-span-5 bg-navy-900/90 rounded-2xl p-5 border border-navy-700/80 shadow-2xl backdrop-blur-md">
+                <div class="flex items-center justify-between pb-3 mb-3 border-b border-navy-800">
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                        <i data-lucide="compass" class="w-4 h-4"></i>
+                        Hızlı Hizmet Gezgini
+                    </span>
+                    <span class="text-[11px] text-slate-400">Bölüme Git</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
+                    <a href="#denizyolu" class="p-2.5 rounded-xl bg-navy-950/80 hover:bg-amber-500 hover:text-navy-950 text-slate-200 border border-navy-800 transition-all flex items-center gap-2 group">
+                        <i data-lucide="ship" class="w-4 h-4 text-amber-400 group-hover:text-navy-950 shrink-0"></i>
+                        <span class="truncate">Denizyolu Konteyner</span>
+                    </a>
+                    <a href="#karayolu" class="p-2.5 rounded-xl bg-navy-950/80 hover:bg-amber-500 hover:text-navy-950 text-slate-200 border border-navy-800 transition-all flex items-center gap-2 group">
+                        <i data-lucide="truck" class="w-4 h-4 text-amber-400 group-hover:text-navy-950 shrink-0"></i>
+                        <span class="truncate">Karayolu (FTL/LTL)</span>
+                    </a>
+                    <a href="#havayolu" class="p-2.5 rounded-xl bg-navy-950/80 hover:bg-amber-500 hover:text-navy-950 text-slate-200 border border-navy-800 transition-all flex items-center gap-2 group">
+                        <i data-lucide="plane" class="w-4 h-4 text-amber-400 group-hover:text-navy-950 shrink-0"></i>
+                        <span class="truncate">Havayolu Kargo</span>
+                    </a>
+                    <a href="#gumruk" class="p-2.5 rounded-xl bg-navy-950/80 hover:bg-amber-500 hover:text-navy-950 text-slate-200 border border-navy-800 transition-all flex items-center gap-2 group">
+                        <i data-lucide="file-check" class="w-4 h-4 text-amber-400 group-hover:text-navy-950 shrink-0"></i>
+                        <span class="truncate">Gümrük Müşavirliği</span>
+                    </a>
+                    <a href="#antrepo" class="p-2.5 rounded-xl bg-navy-950/80 hover:bg-amber-500 hover:text-navy-950 text-slate-200 border border-navy-800 transition-all flex items-center gap-2 group">
+                        <i data-lucide="warehouse" class="w-4 h-4 text-amber-400 group-hover:text-navy-950 shrink-0"></i>
+                        <span class="truncate">Antrepo & Depolama</span>
+                    </a>
+                    <a href="#proje" class="p-2.5 rounded-xl bg-navy-950/80 hover:bg-amber-500 hover:text-navy-950 text-slate-200 border border-navy-800 transition-all flex items-center gap-2 group">
+                        <i data-lucide="boxes" class="w-4 h-4 text-amber-400 group-hover:text-navy-950 shrink-0"></i>
+                        <span class="truncate">Proje Taşımacılığı</span>
+                    </a>
+                </div>
+
+                <div class="mt-3 pt-3 border-t border-navy-800 flex items-center justify-between">
+                    <a href="#incoterms" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 transition-colors">
+                        <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                        Incoterms 2020 Teslim Şekilleri Rehberi
+                    </a>
+                    <i data-lucide="arrow-down" class="w-3.5 h-3.5 text-slate-400"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Clean Category Bar (In-flow, non-intrusive) -->
+<div class="bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 overflow-x-auto py-3">
+        <div class="flex items-center gap-2 text-xs font-semibold whitespace-nowrap">
+            <a href="#denizyolu" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-700 transition-colors text-slate-700">Denizyolu Konteyner</a>
+            <a href="#karayolu" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-700 transition-colors text-slate-700">Karayolu (FTL/LTL)</a>
+            <a href="#havayolu" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-700 transition-colors text-slate-700">Havayolu Kargo</a>
+            <a href="#gumruk" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-700 transition-colors text-slate-700">Gümrük Müşavirliği</a>
+            <a href="#antrepo" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-700 transition-colors text-slate-700">Antrepo & Depolama</a>
+            <a href="#proje" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-700 transition-colors text-slate-700">Proje Taşımacılığı</a>
+            <a href="#incoterms" class="px-3.5 py-1.5 rounded-lg bg-amber-100 text-amber-800 hover:bg-amber-200 transition-colors">Incoterms 2020 Rehberi</a>
+        </div>
+    </div>
+</div>
+
+<!-- Services Details Sections (Balanced, tight spacing without empty gap) -->
+<div class="py-10 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-10">
+
+        <!-- 1. Denizyolu -->
+        <section id="denizyolu" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                        <i data-lucide="ship" class="w-4 h-4"></i>
+                        Global Denizyolu Taşımacılığı
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950">
+                        Denizyolu Konteyner Taşımacılığı (FCL / LCL)
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Dünyanın önde gelen armatörleriyle yaptığımız hacimli doğrudan kontratlar sayesinde Şanghay, Ningbo, Qingdao, Hamburg, Rotterdam, New York ve Dubai gibi ana limanlar ile Türkiye limanları (Ambarlı, Mersin, İzmir, Gemlik) arasında en rekabetçi navlun oranlarını sunuyoruz.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-navy-950 text-sm mb-1">FCL (Full Container Load)</h4>
+                            <p class="text-xs text-slate-600">20' Standart, 40' Standard & High Cube, Open Top, Flat Rack ve Reefer soğutmalı konteyner tedariki.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-navy-950 text-sm mb-1">LCL (Parsiyel Konsolidasyon)</h4>
+                            <p class="text-xs text-slate-600">Küçük hacimli yükleriniz için haftalık düzenli parsiyel konsol hatları ile metreküp bazlı tasarruflu navlun.</p>
+                        </div>
+                    </div>
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <a href="iletisim.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-navy-950 amber-gradient shadow hover:opacity-95 transition-all text-sm">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Denizyolu Operasyonu İçin İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h4 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Denizyolu Avantajları</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Armatör kontratlı uygun navlun</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Liman tahmil/tahliye ve vinç çözümleri</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Serbest süre (Free Time) uzatım desteği</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Liman gümrükleme entegrasyonu</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Karayolu -->
+        <section id="karayolu" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                        <i data-lucide="truck" class="w-4 h-4"></i>
+                        Avrupa & Balkanlar Karayolu
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950">
+                        Uluslararası Karayolu Taşımacılığı (FTL / LTL)
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Almanya, İtalya, Avusturya, Hollanda, Fransa, Polonya, Romanya ve Bulgaristan başta olmak üzere tüm Avrupa koridorunda modern Euro-6 filomuz ve seçkin tedarikçi ağımız ile kapıdan kapıya güvenli teslimat sağlıyoruz.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-navy-950 text-sm mb-1">FTL (Komple TIR) & Frigo</h4>
+                            <p class="text-xs text-slate-600">Standart tente, mega treyler, askılı tekstil ve çift rejimli kontrollü soğuk zincir frigo taşımacılığı.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-navy-950 text-sm mb-1">Ekspres Minivan & LTL Parsiyel</h4>
+                            <p class="text-xs text-slate-600">Haftalık düzenli çıkışlı parsiyel sevkiyatlar ve acil teslimatlar için 48-72 saatte teslim garantili minivan servisi.</p>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <a href="iletisim.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-navy-950 amber-gradient shadow hover:opacity-95 transition-all text-sm">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Karayolu Operasyonu İçin İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h4 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Karayolu Özellikleri</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Kapıkule ve Hamzabeyli sınır takip masaları</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> T1 / T2 Teminatlı Transit Beyannamesi</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> CMR sigortası tam kapsam koruma</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> ADR belgeli sürücü ve ekipmanlar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Havayolu -->
+        <section id="havayolu" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                        <i data-lucide="plane" class="w-4 h-4"></i>
+                        Hızlı Hava Kargo
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950">
+                        Uluslararası Havayolu Taşımacılığı & Charter
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Zamanın kritik olduğu otomotiv yedek parça, tekstil numuneleri, teknolojik cihazlar ve acil medikal sevkiyatlar için küresel IATA havayolu şirketleriyle iş birliği içinde en hızlı uçuş kombinasyonlarını organize ediyoruz.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-navy-950 text-sm mb-1">Standard & Express Hava Kargo</h4>
+                            <p class="text-xs text-slate-600">İstanbul Havalimanı (IST) ve Sabiha Gökçen (SAW) çıkışlı/varışlı günlük düzenli kargo uçuşları.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <h4 class="font-bold text-navy-950 text-sm mb-1">Özel Kargo & Charter Uçak</h4>
+                            <p class="text-xs text-slate-600">Büyük tonajlı veya özel güvenlik gerektiren yükler için tam veya kısmi uçak kiralama hizmeti.</p>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <a href="iletisim.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-navy-950 amber-gradient shadow hover:opacity-95 transition-all text-sm">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Havayolu Operasyonu İçin İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h4 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Hava Kargo Avantajları</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Küresel IATA acente ağı güvencesi</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> 24-48 saat ekspres teslimat seçeneği</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Havalimanı içi hızlı gümrükleme desteği</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Sıcaklık kontrollü kargo taşımacılığı</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Gümrük Müşavirliği -->
+        <section id="gumruk" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        Mevzuat & Danışmanlık
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950">
+                        A Sınıfı Yetkili Gümrük Müşavirliği
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        T.C. Ticaret Bakanlığı yetki belgeli (GM-34/8921) uzman gümrük müşavirlerimiz, tüm gümrük müdürlüklerinde (Muratbey, Ambarlı, Erenköy, AHL, İGA, Gemlik, Mersin) ithalat, ihracat ve transit işlemlerinizi hızlı ve mevzuata tam uyumlu şekilde sonuçlandırır.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="font-bold text-navy-950 block mb-1">GTİP & Tarife Tespiti</span>
+                            <span>Doğru vergilendirme ve ceza risklerini önleme.</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="font-bold text-navy-950 block mb-1">DİİB & Teşvik Danışmanlığı</span>
+                            <span>Dahilde İşleme İzin Belgesi kapatma ve teminat çözümü.</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="font-bold text-navy-950 block mb-1">TAREKS & Standartlar</span>
+                            <span>TSE, Tarım, CE ve Sağlık Bakanlığı uygunluk izinleri.</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <a href="iletisim.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-navy-950 amber-gradient shadow hover:opacity-95 transition-all text-sm">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Gümrük Müşavirliği Danışmanlığı Alın
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h4 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Yetki & Güvenilirlik</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> A Sınıfı Gümrük Müşaviri Yetki Belgesi</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> BİLGE ve EDI doğrudan entegrasyonu</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Sarı Hat / Kırmızı Hat operasyon takibi</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Yıllık mevzuat denetim ve risk analizi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Antrepo & Depolama -->
+        <section id="antrepo" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                        <i data-lucide="warehouse" class="w-4 h-4"></i>
+                        Depolama & Dağıtım
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950">
+                        Gümrüklü Genel Antrepo ve Serbest Depolama
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        İstanbul'un stratejik lojistik düğüm noktalarında yer alan A Tipi genel gümrüklü antrepolarımız ile ithalat vergilerinizi ürünleriniz millileşene kadar erteleyin. Serbest depolama alanlarımızda barkodlama, etiketleme, palet bozma ve son teslimat dağıtımı yapıyoruz.
+                    </p>
+                    <div class="pt-2">
+                        <a href="iletisim.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-navy-950 amber-gradient shadow hover:opacity-95 transition-all text-sm">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Antrepo Çözümleri İçin İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h4 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Antrepo Altyapısı</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Yangın sprinkleri ve 7/24 HD kamera</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> WMS depo yönetim sistemi barkodlama</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Ağır tonajlı rampa ve forklift filosu</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Proje Taşımacılığı -->
+        <section id="proje" class="scroll-mt-20 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                        <i data-lucide="boxes" class="w-4 h-4"></i>
+                        Ağır & Gabari Dışı
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-950">
+                        Proje ve Gabari Dışı Taşımacılık
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Standart taşıma ölçülerini aşan ağır tonajlı sanayi makineleri, trafo, türbin, fabrika hatları ve şantiye ekipmanları için hidrolik lowbed, özel multimodal güzergah planlaması, yol izinleri ve eskort nezaret hizmetleri sağlıyoruz.
+                    </p>
+                    <div class="pt-2">
+                        <a href="iletisim.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-navy-950 amber-gradient shadow hover:opacity-95 transition-all text-sm">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            Proje Taşımacılığı İçin İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+                    <h4 class="font-bold text-amber-400 text-sm uppercase tracking-wider">Proje Kapsamı</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Yol etüt ve köprü dayanım analizleri</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Özel hidrolik platform ve lowbed temini</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Vinç, lashing sabitleme sertifikasyonu</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Incoterms 2020 Rehberi -->
+        <section id="incoterms" class="scroll-mt-20 bg-navy-900 text-white rounded-3xl p-6 sm:p-10 border border-navy-700 shadow-xl">
+            <div class="max-w-4xl space-y-4 mb-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-navy-800 px-3 py-1 rounded-full border border-amber-500/30">
+                    Uluslararası Ticaret Terimleri
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Incoterms 2020 Hızlı Referans Tablosu</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Uluslararası alıcı ve satıcı arasındaki navlun masrafı, sigorta ve risk devir noktalarını özetleyen temel teslim şekilleri:
+                </p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-navy-700 text-amber-400 font-bold uppercase text-[11px] tracking-wider">
+                            <th class="py-3 px-3">Kod</th>
+                            <th class="py-3 px-3">Teslim Şekli Adı</th>
+                            <th class="py-3 px-3">Taşıma Modu</th>
+                            <th class="py-3 px-3">Navlunu Kim Öder?</th>
+                            <th class="py-3 px-3">Gümrük İhracat / İthalat</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-navy-800 text-slate-300">
+                        <tr>
+                            <td class="py-3 px-3 font-mono font-bold text-white">EXW</td>
+                            <td class="py-3 px-3">Ex Works (İşyerinde Teslim)</td>
+                            <td class="py-3 px-3">Tüm Modlar</td>
+                            <td class="py-3 px-3 text-amber-300">Alıcı</td>
+                            <td class="py-3 px-3">Her İkisi de Alıcıda</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-mono font-bold text-white">FOB</td>
+                            <td class="py-3 px-3">Free on Board (Gemi Bordasında Teslim)</td>
+                            <td class="py-3 px-3">Denizyolu</td>
+                            <td class="py-3 px-3 text-amber-300">Alıcı</td>
+                            <td class="py-3 px-3">İhracat Satıcı / İthalat Alıcı</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-mono font-bold text-white">CIF / CFR</td>
+                            <td class="py-3 px-3">Cost, Insurance & Freight</td>
+                            <td class="py-3 px-3">Denizyolu</td>
+                            <td class="py-3 px-3 text-emerald-400">Satıcı</td>
+                            <td class="py-3 px-3">İhracat Satıcı / İthalat Alıcı</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-mono font-bold text-white">FCA / CPT</td>
+                            <td class="py-3 px-3">Carriage Paid To (Taşıma Ödenmiş)</td>
+                            <td class="py-3 px-3">Tüm Modlar (Kara/Hava)</td>
+                            <td class="py-3 px-3 text-emerald-400">Satıcı</td>
+                            <td class="py-3 px-3">İhracat Satıcı / İthalat Alıcı</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-mono font-bold text-white">DAP</td>
+                            <td class="py-3 px-3">Delivered at Place (Belirlenen Yerde Teslim)</td>
+                            <td class="py-3 px-3">Tüm Modlar</td>
+                            <td class="py-3 px-3 text-emerald-400">Satıcı</td>
+                            <td class="py-3 px-3">İhracat Satıcı / İthalat Alıcı</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-3 font-mono font-bold text-white">DDP</td>
+                            <td class="py-3 px-3">Delivered Duty Paid (Gümrük Vergileri Ödenmiş)</td>
+                            <td class="py-3 px-3">Tüm Modlar</td>
+                            <td class="py-3 px-3 text-emerald-400">Satıcı</td>
+                            <td class="py-3 px-3 text-amber-300">Tüm Vergiler Satıcıya Ait</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+</div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-navy-950 text-slate-400 border-t border-navy-800 text-sm">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-16 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Col 1: Brand & Customs Authority (2 cols span on lg) -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-navy-950 font-black shadow-md">
+                            <i data-lucide="anchor" class="w-5 h-5 stroke-[2.5]"></i>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight text-white">
+                            MUNDO<span class="text-amber-500">IMEX</span>
+                        </span>
+                    </div>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+                        Mundoimex Logistics & Customs; küresel tedarik zincirinde kıtalararası denizyolu konteyner, ekspres karayolu ve havayolu taşımacılığı ile A Karneli gümrük müşavirliği hizmetlerini tek çatı altında sunan yetkili kurumsal lojistik çözüm ortağınızdır.
+                    </p>
+                    <div class="pt-2">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-navy-900 border border-navy-800 text-xs text-amber-400 font-semibold">
+                            <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
+                            T.C. Ticaret Bakanlığı Yetkili Gümrük Müşavirliği (GM-34/8921)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Hizmetlerimiz</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="hizmetler.html#denizyolu" class="hover:text-amber-400 transition-colors">Denizyolu Konteyner (FCL/LCL)</a></li>
+                        <li><a href="hizmetler.html#karayolu" class="hover:text-amber-400 transition-colors">Karayolu Taşımacılığı (FTL/LTL)</a></li>
+                        <li><a href="hizmetler.html#havayolu" class="hover:text-amber-400 transition-colors">Uluslararası Havayolu Kargo</a></li>
+                        <li><a href="hizmetler.html#gumruk" class="hover:text-amber-400 transition-colors">Gümrük Müşavirliği & Mevzuat</a></li>
+                        <li><a href="hizmetler.html#antrepo" class="hover:text-amber-400 transition-colors">Gümrüklü Antrepo & Dağıtım</a></li>
+                        <li><a href="hizmetler.html#proje" class="hover:text-amber-400 transition-colors">Proje ve Gabari Dışı Taşımacılık</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Corporate Links -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider">Kurumsal & Rehber</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="index.html" class="hover:text-amber-400 transition-colors">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html" class="hover:text-amber-400 transition-colors">Hizmet Portföyümüz</a></li>
+                        <li><a href="hizmetler.html#incoterms" class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><i data-lucide="book-open" class="w-3.5 h-3.5 text-amber-500"></i> Incoterms 2020 Rehberi</a></li>
+                        <li><a href="hizmetler.html#gumruk" class="hover:text-amber-400 transition-colors flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-500"></i> Gümrük Yetki Belgelerimiz</a></li>
+                        <li><a href="iletisim.html" class="hover:text-amber-400 transition-colors">İletişim & Ofis Lokasyonları</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Support -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider">İletişim & Destek</h4>
+                    <ul class="space-y-2.5 text-xs sm:text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                            <span>DTM A-2 Blok Kat: 9 No: 312, Yeşilköy, İstanbul</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-amber-500 shrink-0"></i>
+                            <a href="tel:+902125550198" class="hover:text-amber-400">+90 (212) 555 0198</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone-forwarded" class="w-4 h-4 text-amber-500 shrink-0"></i>
+                            <a href="tel:+905325550199" class="hover:text-amber-400">+90 (532) 555 0199 (7/24 Acil)</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-amber-500 shrink-0"></i>
+                            <a href="mailto:operasyon@mundoimex.com" class="hover:text-amber-400">operasyon@mundoimex.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- KVKK Notice & Legal Disclaimer -->
+            <div class="mt-12 pt-8 border-t border-navy-800/80 text-xs text-slate-500 leading-relaxed">
+                <p>
+                    <strong>KVKK ve Veri Güvenliği Aydınlatma Metni:</strong> Mundoimex Lojistik ve Gümrükleme A.Ş., 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla hareket etmektedir. Platform üzerinden iletilen kurumsal talep ve iletişim verileri münhasıran gümrük beyannamesi düzenlenmesi, uluslararası taşımacılık operasyonlarının icrası ve yasal yükümlülüklerin yerine getirilmesi amacıyla işlenir; üçüncü taraflarla ticari amaçla paylaşılmaz.
+                </p>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="mt-6 pt-4 border-t border-navy-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>© 2026 Mundoimex Logistics & Customs. Tüm hakları saklıdır.</p>
+                <div class="flex items-center gap-6">
+                    <span class="inline-flex items-center gap-1.5 text-slate-400">
+                        <i data-lucide="shield" class="w-3.5 h-3.5 text-emerald-500"></i> 256-Bit SSL Şifreleme Koruması
+                    </span>
+                    <a href="iletisim.html" class="hover:text-amber-400">Gizlilik & Güvenlik Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Scripts -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Initialize all Lucide SVG icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

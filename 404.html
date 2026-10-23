@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Sayfa Bulunamadı | Mundoimex Logistics & Customs</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#F0F4F8',
+                            100: '#D9E2EC',
+                            700: '#1E3A8A',
+                            800: '#0F284E',
+                            900: '#0A192F',
+                            950: '#050D18'
+                        },
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Header -->
+    <header class="w-full bg-navy-900 border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-navy-950 font-black shadow-md">
+                    <i data-lucide="anchor" class="w-6 h-6 stroke-[2.5]"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-white">
+                        MUNDO<span class="text-amber-500">IMEX</span>
+                    </span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold -mt-1">
+                        Logistics & Customs
+                    </span>
+                </div>
+            </a>
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="text-sm font-medium text-slate-200 hover:text-amber-400 px-3 py-1.5 rounded-lg">Ana Sayfa</a>
+                <a href="hizmetler.html" class="text-sm font-medium text-slate-200 hover:text-amber-400 px-3 py-1.5 rounded-lg">Hizmetlerimiz</a>
+                <a href="iletisim.html" class="text-sm font-bold text-navy-950 bg-amber-500 hover:bg-amber-400 px-4 py-2 rounded-lg transition-colors">Bize Ulaşın</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 404 Main Body -->
+    <main class="flex-grow flex items-center justify-center py-20 px-4">
+        <div class="max-w-md w-full bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-xl text-center space-y-6">
+            <div class="w-20 h-20 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center mx-auto">
+                <i data-lucide="compass" class="w-10 h-10 animate-spin"></i>
+            </div>
+            
+            <div class="space-y-2">
+                <span class="text-4xl font-black text-navy-950 font-mono">404</span>
+                <h1 class="text-xl font-extrabold text-navy-900">Aradığınız Rota Bulunamadı</h1>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Ulaşmaya çalıştığınız sayfa taşınmış veya kaldırılmış olabilir. Ana sayfaya dönerek hizmetlerimizi inceleyebilirsiniz.
+                </p>
+            </div>
+
+            <div class="pt-2">
+                <a href="index.html" class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-6 rounded-xl font-bold text-navy-950 amber-gradient hover:opacity-95 shadow-md active:scale-95 transition-all text-sm">
+                    <i data-lucide="home" class="w-4 h-4"></i>
+                    Ana Sayfaya Dön
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 text-xs py-6 border-t border-navy-800 text-center">
+        <p>© 2026 Mundoimex Logistics & Customs. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+</body>
+</html>
